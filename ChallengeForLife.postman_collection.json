@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "f7451d4c-a58a-438c-9194-c525bb69e732",
+		"name": "ChallengeForLife",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Diagonal Sum",
+					"item": [
+						{
+							"name": "/api/DiagonalSum",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"10 2 4 3,6 0 6 4,10 9 -12 7,-14 2 3 5\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/DiagonalSum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"DiagonalSum"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/api/DiagonalSum",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/DiagonalSum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"DiagonalSum"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Very Big Sum",
+					"item": [
+						{
+							"name": "/api/VeryBigSum",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/VeryBigSum/fa29a590-c87e-4081-a808-6743d6d069f7",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"VeryBigSum",
+										"fa29a590-c87e-4081-a808-6743d6d069f7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/api/VeryBigSum",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"2147483647 2147483647 2147483647\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/VeryBigSum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"VeryBigSum"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ratio Problems",
+					"item": [
+						{
+							"name": "/api/RatioProblems",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\"-4 0 -9 0 4 0\"",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/RatioProblems",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"RatioProblems"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "/api/RatioProblems",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/RatioProblems/3f7a8de9-6e92-4f80-959c-6c12bf9a7c65",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"RatioProblems",
+										"3f7a8de9-6e92-4f80-959c-6c12bf9a7c65"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
